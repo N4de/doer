@@ -23,7 +23,7 @@ const Item = ({ title }) => (
   </View>
 );
 
-export const TodoList = (props) => {
+export const TodoList = () => {
   const [todos, setTodos] = useState([]);
   const [todo, setTodo] = useState("");
 
