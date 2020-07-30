@@ -1,19 +1,19 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import { TodoList } from "./components/todoList";
 import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
-import Routines from "./components/routines";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import HomeScreen from "./screens/homeScreen";
+import RoutinesScreen from "./screens/routinesScreen";
+import { Button } from "react-native";
 
-const Stack = createStackNavigator();
+const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Todos" component={TodoList} />
-        <Stack.Screen name="Routines" component={Routines} />
-      </Stack.Navigator>
+      <Tab.Navigator>
+        <Tab.Screen name="Todos" component={HomeScreen} />
+        <Tab.Screen name="Routines" component={RoutinesScreen} />
+      </Tab.Navigator>
     </NavigationContainer>
   );
 }
