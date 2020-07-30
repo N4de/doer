@@ -3,7 +3,6 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeScreen from "./screens/homeScreen";
 import RoutinesScreen from "./screens/routinesScreen";
-import { Button } from "react-native";
 
 const Tab = createBottomTabNavigator();
 
